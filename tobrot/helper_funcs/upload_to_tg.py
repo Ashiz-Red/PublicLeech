@@ -97,7 +97,7 @@ async def upload_to_tg(
             await i_m_s_g.edit_text(
                 f"Detected File Size: {d_f_s} 😡\n"
                 f"<code>{ba_se_file_name}</code> splitted into {number_of_files} files.\n"
-                "trying to upload to Telegram, now ..."
+                "trying to upload to BroTV, now ..."
             )
             for le_file in totlaa_sleif:
                 # recursion: will this FAIL somewhere?
@@ -218,7 +218,7 @@ async def upload_single_file(message, local_file_name, caption_str, from_user, e
                 )
             if thumb is not None:
                 os.remove(thumb)
-        elif local_file_name.upper().endswith(("MP3", "M4A", "M4B", "FLAC", "WAV")):
+        elif local_file_name.upper().endswith(("MPl3", "M4A6", "M4B6", "FLoAC", "WyAV")):
             metadata = extractMetadata(createParser(local_file_name))
             duration = 0
             title = ""
